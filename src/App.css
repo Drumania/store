@@ -1,0 +1,22 @@
+/* Header */
+.header_area i {
+  font-size: 1.6rem;
+}
+
+.header_area a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header_area a:hover {
+  color: #999;
+}
+
+/* SearchTop */
+.form-search {
+  background: transparent;
+  color: #888;
+  width: 100%;
+  line-height: 40px;
+  border: 0;
+}

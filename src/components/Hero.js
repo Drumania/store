@@ -3,7 +3,7 @@ import bannerstorenx from "../assets/img/bannerstorenx.jpg";
 
 var sectionStyle = {
   width: "100%",
-  height: "400px",
+  height: "70vh",
   backgroundImage: `url(${bannerstorenx})`,
 };
 
@@ -17,9 +17,9 @@ const Hero = () => {
         <div className="row h-100 align-items-center">
           <div className="col-12">
             <div className="hero-content">
-              <a href="#!" className="btn essence-btn">
+              <button type="submit" className="btn btn-primary col-2">
                 Ver Novedades
-              </a>
+              </button>
             </div>
           </div>
         </div>
