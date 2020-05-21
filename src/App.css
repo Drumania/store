@@ -164,6 +164,83 @@
   visibility: visible;
 }
 
+/* pagination */
+
+.pagination {
+  position: relative;
+  z-index: 1;
+}
+.pagination .page-item .page-link {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ebebeb;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 38px;
+  padding: 0;
+  text-align: center;
+  color: #787878;
+}
+.pagination .page-item .page-link:hover,
+.pagination .page-item .page-link:focus {
+  color: #0315ff;
+  box-shadow: none;
+}
+.pagination .page-item:first-child {
+  margin-right: 15px;
+}
+.pagination .page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.pagination .page-item:last-child {
+  margin-left: 15px;
+}
+.pagination .page-item:last-child .page-link {
+  margin-left: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Brands Area  */
+.brands-area {
+  position: relative;
+  z-index: 1;
+  background-color: #f5f7f9;
+  padding: 100px 5%;
+}
+@media only screen and (max-width: 767px) {
+  .brands-area {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 100px 5% 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .brands-area .single-brands-logo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    width: 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+.brands-area .single-brands-logo img {
+  max-width: 120px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .brands-area .single-brands-logo img {
+    max-width: 90px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .brands-area .single-brands-logo img {
+    max-width: 80px;
+    margin-bottom: 30px;
+  }
+}
+
 /* Footer */
 
 /* :: 11.0 Footer Area CSS */
