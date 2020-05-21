@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/img/logostorenx.svg";
 
 const Footer = () => {
   return (
@@ -9,11 +10,7 @@ const Footer = () => {
             <div className="single_widget_area d-flex mb-30">
               <div className="footer-logo mr-50">
                 <a href="#!">
-                  <img
-                    className="logo-img"
-                    src="img/core-img/logostorenx.svg"
-                    alt="StoreNX"
-                  />
+                  <img className="logo-img" src={logo} alt="StoreNX" />
                 </a>
               </div>
               <div className="footer_menu">
@@ -89,9 +86,17 @@ const Footer = () => {
                   href="#!"
                   data-toggle="tooltip"
                   data-placement="top"
+                  title="Whatsapp"
+                >
+                  <i className="fab fa-whatsapp"></i>
+                </a>
+                <a
+                  href="#!"
+                  data-toggle="tooltip"
+                  data-placement="top"
                   title="Facebook"
                 >
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
                 <a
                   href="#!"
@@ -99,23 +104,7 @@ const Footer = () => {
                   data-placement="top"
                   title="Instagram"
                 >
-                  <i className="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a
-                  href="#!"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Twitter"
-                >
-                  <i className="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-                <a
-                  href="#!"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Pinterest"
-                >
-                  <i className="fa fa-pinterest" aria-hidden="true"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
                 <a
                   href="#!"
@@ -123,7 +112,7 @@ const Footer = () => {
                   data-placement="top"
                   title="Youtube"
                 >
-                  <i className="fa fa-youtube-play" aria-hidden="true"></i>
+                  <i className="fab fa-youtube"></i>
                 </a>
               </div>
             </div>

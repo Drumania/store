@@ -21,14 +21,14 @@ const Header = () => {
           className="col-1 border-right p-3 d-flex align-items-center justify-content-center"
           title="Ver Favoritos"
         >
-          <i class="far fa-heart"></i>
+          <i className="far fa-heart"></i>
         </a>
         <a
           href="#!"
           className="col-1 border-right p-3 d-flex align-items-center justify-content-center"
           title="Mi cuenta"
         >
-          <i class="far fa-user"></i>
+          <i className="far fa-user"></i>
         </a>
         <a
           href="#!"
