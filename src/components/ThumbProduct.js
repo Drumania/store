@@ -9,7 +9,7 @@ const thumbProduct = ({ product }) => {
         <img className="hover-img" src={product.photo} alt={product.name} />
 
         <div className="product-favourite">
-          <a href="#!" className="favme fa fa-heart">
+          <a href="#!" className="favme">
             <i className="far fa-heart"></i>
           </a>
         </div>

@@ -1,26 +1,18 @@
 import React from "react";
 
 const CategoriesTop = () => {
+  const categories = ["Categorias", "Cuotas sin interés", "Ofertazas"];
   return (
     <>
-      <a
-        href="#!"
-        className="d-flex align-items-center justify-content-start pr-3"
-      >
-        Categorias
-      </a>
-      <a
-        href="#!"
-        className="d-flex align-items-center justify-content-start pr-3"
-      >
-        Cuotas sin interés
-      </a>
-      <a
-        href="#!"
-        className="d-flex align-items-center justify-content-start pr-3"
-      >
-        Ofertas
-      </a>
+      {categories.map((item) => (
+        <a
+          key={Object.keys(item)}
+          href="#!"
+          className="d-flex align-items-center justify-content-start pr-3"
+        >
+          {item}
+        </a>
+      ))}
     </>
   );
 };

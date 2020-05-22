@@ -4,7 +4,7 @@ import logo from "../assets/img/logostorenx.svg";
 const Footer = () => {
   return (
     <footer className="footer_area clearfix">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-md-6">
             <div className="single_widget_area d-flex mb-30">
