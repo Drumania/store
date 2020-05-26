@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const thumbProduct = ({ product }) => {
   return (
@@ -9,7 +10,7 @@ const thumbProduct = ({ product }) => {
         <img className="hover-img" src={product.photo} alt={product.name} />
 
         <div className="product-favourite">
-          <a href="#!" className="favme">
+          <a href="#!" className="favme" title="Agregar a Mis Favoritos">
             <i className="far fa-heart"></i>
           </a>
         </div>
@@ -17,9 +18,9 @@ const thumbProduct = ({ product }) => {
 
       <div className="product-description">
         <span>{product.category}</span>
-        <a href="#!">
+        <Link to="/product">
           <h6>{product.name}</h6>
-        </a>
+        </Link>
         <p className="product-price">{`$ ${product.price}`}</p>
 
         <div className="hover-content">

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 //import axios from "axios";
-import CategoriesHome from "./CategoriesHome";
+import Hero from "./Hero";
 import { postings } from "../api/category_50___1.js";
-import ThumbProduct from "./ThumbProduct";
+import ListProducts from "./ListProducts";
+import Brands from "./Brands";
 
 const GridProduct = () => {
   const [productsHome, setProductsHome] = useState([]);
@@ -15,7 +16,7 @@ const GridProduct = () => {
     setProductsHome(products);
     /*
     const getProducts = async () => {
-      const url = "store.com/api/category_50___1.json";
+      const url = "store.com/api/category.php?=televisores&pageinit=21&pageend=40";
       const productsByCategory = await axios.get(url);
 
       setCategory(productsByCategory);
@@ -27,13 +28,10 @@ const GridProduct = () => {
 
   return (
     <div className="container-fluid">
-      <CategoriesHome />
-      <h2 className="mt-5 mb-3 section-heading">Ofertas!</h2>
-      <div className="wrap-thumbs-products">
-        {productsHome.map((product) => (
-          <ThumbProduct key={product.id} product={product} />
-        ))}
-      </div>
+      <Hero />
+      <Brands />
+      <h2 className="my-3 section-heading">Ofertas!</h2>
+      <ListProducts productsHome={productsHome} />
     </div>
   );
 };
