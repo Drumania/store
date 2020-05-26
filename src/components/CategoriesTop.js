@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 const CategoriesTop = () => {
   const categories = ["Categorias", "Cuotas sin interés", "Ofertazas"];
   return (
-    <>
+    <Router>
       {categories.map((item) => (
         <Link
           to="/category"
@@ -16,7 +16,7 @@ const CategoriesTop = () => {
           {item}
         </Link>
       ))}
-    </>
+    </Router>
   );
 };
 

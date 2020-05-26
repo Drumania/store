@@ -45,6 +45,13 @@ body {
   color: #999;
 }
 
+.logo {
+  vertical-align: middle;
+  border-style: none;
+  background: #000;
+  border-radius: 10px;
+}
+
 /* SearchTop */
 .form-search {
   background: transparent;
