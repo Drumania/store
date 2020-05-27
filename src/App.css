@@ -1,14 +1,26 @@
 /* vars */
 :root {
   --grid-gap: 32px; /* grid-gap */
-  --fir-color: rgb(140, 0, 255); /* grid-gap */
-  --sec-color: #7220b6; /* grid-gap */
+  --fir-color: #6f00ff; /* Color principal */
+  --sec-color: #5000b8; /* Color Secundario */
 }
 
 /* Custom Bootstrap */
 body {
   padding-top: 74px;
   background: #fafafa;
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb a {
+  color: #000;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\279D";
 }
 
 .container-fluid,
@@ -21,6 +33,13 @@ body {
   padding-left: 4%;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Structure */
+
+.container-white {
+  padding-top: 74px;
+  background: #fff;
 }
 
 /* Header */

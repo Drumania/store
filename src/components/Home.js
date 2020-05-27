@@ -11,8 +11,7 @@ const GridProduct = () => {
   useEffect(() => {
     let products = postings[0].products;
 
-    //direction
-    console.log(products);
+    //console.log(products);
     setProductsHome(products);
     /*
     const getProducts = async () => {

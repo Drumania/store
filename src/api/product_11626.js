@@ -1,4 +1,5 @@
-{
+export const postings = [
+  {
   "company": { "company_id": 1, "company_name": "Necxus" },
   "id": 11626,
   "photo_thumb": "https://www.necxus.com.ar/products_image/11626/1000x1000_1.jpg",
@@ -563,3 +564,4 @@
     "texto2": ""
   }
 }
+]
