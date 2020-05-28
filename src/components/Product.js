@@ -41,6 +41,10 @@ const Product = () => {
             </div>
             <div className="col-12 d-flex flex-row align-items-center">
               <span className="final-price">$ 24.693</span>
+              {/*
+                                  precioCuotas = new Intl.NumberFormat("de-DE").format(item.amount);
+                    totalCuotas = totalCuotas.toLocaleString("de-DE");
+                    */}
               {/* <span className="ribbon-discount">- 1%</span> */}
               <span className="old-price ml-3">$ 24.999</span>
             </div>
