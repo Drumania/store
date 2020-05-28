@@ -3,12 +3,16 @@
   --grid-gap: 32px; /* grid-gap */
   --fir-color: #6f00ff; /* Color principal */
   --sec-color: #5000b8; /* Color Secundario */
+  --font-fir-color: #333; /* Color fuente principal */
 }
 
 /* Custom Bootstrap */
 body {
   padding-top: 74px;
   background: #fafafa;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  color: var(--font-fir-color);
 }
 
 .breadcrumb {
@@ -38,7 +42,7 @@ body {
 /* Structure */
 
 .container-white {
-  padding-top: 74px;
+  padding-top: var(--grid-gap);
   background: #fff;
 }
 
@@ -401,6 +405,94 @@ h2.section-heading {
 .essence-btn:focus {
   color: #ffffff;
   background-color: var(--sec-color);
+}
+
+/* Product page */
+
+.custom-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-bottom: var(--grid-gap);
+}
+
+.custom-gallery .div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.custom-gallery .div2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.custom-gallery .div3 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.custom-gallery .div4 {
+  grid-area: 1 / 2 / 4 / 5;
+}
+
+.final-price {
+  font-size: 38px;
+  font-weight: 600;
+  color: #222;
+  line-height: 80px;
+}
+
+.ribbon-discount {
+  position: relative;
+  background: #b5146f;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 20px !important;
+  text-align: right;
+  padding-right: 6px;
+  top: -8px;
+}
+
+.ribbon-discount::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 15px solid #b5146f;
+  border-top: 10px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.old-price {
+  font-size: 18px;
+  font-weight: 400;
+  color: #757575;
+  text-decoration: line-through;
+  line-height: 50px;
+}
+
+/* tags */
+
+.tags {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 40px;
+}
+
+.tags a {
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  padding: 3px 9px;
+  float: left;
+  margin-left: 16px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tags a:hover {
+  text-decoration: none;
 }
 
 /* Footer */

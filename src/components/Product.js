@@ -1,97 +1,76 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { postings } from "../api/product_11626.js";
-import Breadcrumb from "./Breadcrumb";
+
+import Breadcrumb from "./ProductPage/Breadcrumb";
+import Tags from "./ProductPage/Tags";
+import Gallery from "./ProductPage/Gallery";
+import AddFavorites from "./ProductPage/AddFavorites";
+import Description from "./ProductPage/Description";
+import Features from "./ProductPage/Features";
+import Asks from "./ProductPage/Asks";
 
 const Product = () => {
-  useEffect(() => {
-    let products = postings;
+  const [product, setproduct] = useState({});
 
-    console.log(products);
+  useEffect(() => {
+    console.log(postings[0]);
+    setproduct(postings[0]);
   }, []);
 
   return (
     <div className="container-fluid">
-      <Breadcrumb />
-      <div className="container-white row">
-        <div className="col-12 col-lg-6">fotos</div>
+      <div className="row">
         <div className="col-12 col-lg-6">
-          <h2>Cateogria</h2>
-          <h1>Nombre de producto</h1>
-          Stars
-          <div>24999 $ 24.693 - 1%</div>
-          <div>¡Envío gratis! en todo el país Se despacha 24 hs</div>
-          <div>
-            1 Año de garantia oficial 10 días para cambios y devoluciones
-            Conocer mas
+          <Breadcrumb categorys={postings[0].category} name={product.name} />
+        </div>
+        <div className="col-12 col-lg-6">
+          <Tags tags={postings[0].tags} />
+        </div>
+      </div>
+
+      <div className="container-white row rounded">
+        <div className="col-12 col-lg-6">
+          <Gallery />
+        </div>
+        <div className="col-12 col-lg-6">
+          <div className="row">
+            <div className="col-12">
+              <h1>{product.name}</h1>
+              <h2 className="text-secondary">{}</h2>
+              Stars | <a href="#!">Ver Preguntas</a>
+            </div>
+            <div className="col-12 d-flex flex-row align-items-center">
+              <span className="final-price">$ 24.693</span>
+              {/* <span className="ribbon-discount">- 1%</span> */}
+              <span className="old-price ml-3">$ 24.999</span>
+            </div>
+
+            <div className="col-12 border-top pt-4">
+              ¡Envío gratis! en todo el país Se despacha 24 hs
+              <br />1 Año de garantia oficial 10 días para cambios y
+              devoluciones Conocer mas
+            </div>
+
+            <div className="col-12 border-top mt-4 pt-4 d-flex align-items-center ">
+              <button className="btn btn-warning btn-lg col-6" type="submit">
+                Comprar
+              </button>
+              <div className="col-6">
+                <AddFavorites />
+              </div>
+            </div>
           </div>
-          <button>comprar</button>
-          Agregar a favoritos
         </div>
 
         <div className="col-12">
           <hr />
-          <h3>Descripcion</h3>
+          <Description />
 
           <hr />
-          <h3>Caracteristicas</h3>
-
-          <table className="table table-striped">
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Larry</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-            </tbody>
-          </table>
-          <a href="#!">Ver más...</a>
+          <Features />
 
           <hr />
-          <h3>Preguntas</h3>
-          <button
-            type="button"
-            className="btn btn-outline-secondary mr-2 rounded"
-          >
-            Medios de pago y promociones
-          </button>
-          <button
-            type="button"
-            className="btn btn-outline-secondary mr-2 rounded"
-          >
-            Garantía
-          </button>
-          <button type="button" className="btn btn-outline-secondary rounded">
-            Quiero que me contacten
-          </button>
-
-          <form className="my-4">
-            <div className="form-group mt-4">
-              <label for="textareaAsk">
-                Dejanos tu consulta, vamos a responder lo antes posible.
-              </label>
-              <textarea
-                className="form-control"
-                id="textareaAsk"
-                rows="3"
-              ></textarea>
-            </div>
-            <button type="submit" className="btn btn-secondary rounded">
-              Preguntar
-            </button>
-          </form>
+          <Asks />
         </div>
       </div>
     </div>

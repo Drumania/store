@@ -56,7 +56,7 @@
     }
   ],
   "category": [
-    { "name": "Inicio", "url": "http://www.necxus.com.ar/" },
+    { "name": "Inicio", "url": "/" },
     {
       "name": "Outlet o Discontinuo",
       "url": "/categorias/47/Outlet-o-Discontinuo/"
@@ -120,11 +120,11 @@
     }
   ],
   "tags": [
-    { "name": "Reservado", "color": "#FF9966", "link": "" },
+    { "name": "Reservado", "color": "#FF9966" },
     {
       "name": "Samsung",
       "color": "#000",
-      "link": "https://www.necxus.com.ar/landing/Samsung/"
+      "link": "/landing/Samsung/"
     }
   ],
   "type_product": [
