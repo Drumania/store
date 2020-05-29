@@ -16,7 +16,7 @@ const Asks = () => {
 
       <form className="my-4">
         <div className="form-group mt-4">
-          <label for="textareaAsk">
+          <label htmlFor="textareaAsk">
             Dejanos tu consulta, vamos a responder lo antes posible.
           </label>
           <textarea

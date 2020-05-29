@@ -1,10 +1,11 @@
 import React from "react";
 
 const Tags = ({ tags }) => {
+  //console.log(tags);
   return (
-    <ul className="tags mt-4">
+    <ul className="tags">
       {tags.map((tag) => (
-        <li key={Object.key}>
+        <li key={tag.name}>
           <a
             href={tag.link ? tag.link : "#!"}
             style={{

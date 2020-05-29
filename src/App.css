@@ -425,7 +425,22 @@ h2.section-heading {
 }
 .custom-gallery .div3 {
   grid-area: 3 / 1 / 4 / 2;
+  grid-area: 3 / 1 / 4 / 2;
+  background: rgb(104, 104, 104);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
+
+.custom-gallery a.div3 {
+  color: #fff;
+}
+
+.custom-gallery a.div3:hover {
+  text-decoration: none;
+}
+
 .custom-gallery .div4 {
   grid-area: 1 / 2 / 4 / 5;
 }
@@ -476,7 +491,6 @@ h2.section-heading {
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 40px;
 }
 
 .tags a {

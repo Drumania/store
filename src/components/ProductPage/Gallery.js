@@ -1,42 +1,85 @@
 import React from "react";
 
-const Gallery = () => {
+/*
+
+          <picture>
+            <source srcSet="${photo_thumb_webp}" alt="${name}" type="image/webp />
+            <source srcSet="${photo_thumb}" alt="${name}" type="image/jpeg" />
+            <img src="${photo_thumb}" alt="${name}" />
+          </picture>
+
+*/
+
+const Gallery = ({ photo_thumb, photo_thumb_webp, media, name }) => {
+  console.log(photo_thumb);
+  console.log(photo_thumb_webp);
+
   return (
     <div className="custom-gallery">
-      <div className="div1">
-        <a href="#!">
-          <img
-            className="img-fluid"
-            src="http://placehold.it/150x150&text=1"
-            alt="prod"
-          />
+      {media.length > 1 && (
+        <div className="div1">
+          <a href="#!">
+            <picture className="img-fluid">
+              <source
+                srcSet={media[1].src_thumb}
+                alt={name}
+                className="img-fluid"
+                type="image/webp"
+              />
+              <source
+                srcSet={media[1].src_thumb_webp}
+                alt={name}
+                className="img-fluid"
+                type="image/jpeg"
+              />
+              <img src={media[1].src_thumb} className="img-fluid" alt={name} />
+            </picture>
+          </a>
+        </div>
+      )}
+      {media.length > 2 && (
+        <div className="div2">
+          <a href="#!">
+            <picture className="img-fluid">
+              <source
+                srcSet={media[2].src_thumb}
+                alt={name}
+                className="img-fluid"
+                type="image/webp"
+              />
+              <source
+                srcSet={media[2].src_thumb_webp}
+                alt={name}
+                className="img-fluid"
+                type="image/jpeg"
+              />
+              <img src={media[2].src_thumb} className="img-fluid" alt={name} />
+            </picture>
+          </a>
+        </div>
+      )}
+      {media.length > 3 && (
+        <a className="div3" href="#!">
+          + {media.length - 2}
         </a>
-      </div>
-      <div className="div2">
-        <a href="#!">
-          <img
-            className="img-fluid"
-            src="http://placehold.it/150x150&text=1"
-            alt="prod"
-          />
-        </a>
-      </div>
-      <div className="div3">
-        <a href="#!">
-          <img
-            className="img-fluid"
-            src="http://placehold.it/150x150&text=1"
-            alt="prod"
-          />
-        </a>
-      </div>
+      )}
       <div className="div4">
         <a href="#!">
-          <img
-            className="img-fluid"
-            src="http://placehold.it/1150x1150&text=1"
-            alt="prod"
-          />
+          <picture className="img-fluid">
+            <source
+              srcSet={photo_thumb_webp}
+              alt={name}
+              className="img-fluid"
+              type="image/webp"
+            />
+            <source
+              srcSet={photo_thumb}
+              alt={name}
+              className="img-fluid"
+              type="image/jpeg"
+            />
+            <img src={photo_thumb} className="img-fluid" alt={name} />
+          </picture>
         </a>
       </div>
     </div>
