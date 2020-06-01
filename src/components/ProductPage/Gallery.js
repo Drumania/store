@@ -1,18 +1,8 @@
 import React from "react";
 
-/*
-
-          <picture>
-            <source srcSet="${photo_thumb_webp}" alt="${name}" type="image/webp />
-            <source srcSet="${photo_thumb}" alt="${name}" type="image/jpeg" />
-            <img src="${photo_thumb}" alt="${name}" />
-          </picture>
-
-*/
-
 const Gallery = ({ photo_thumb, photo_thumb_webp, media, name }) => {
-  console.log(photo_thumb);
-  console.log(photo_thumb_webp);
+  //console.log(photo_thumb);
+  //console.log(photo_thumb_webp);
 
   return (
     <div className="custom-gallery">

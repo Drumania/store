@@ -1,22 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CategoriesTop = () => {
-  const categories = ["Categorias", "Cuotas sin interés", "Ofertazas"];
+  const categories = [
+    { name: "Categorias", url: "/category" },
+    { name: "Cuotas sin interes", url: "/cuotas-sin-interes" },
+    { name: "Ofertas", url: "/category" },
+  ];
+
   return (
-    <Router>
+    <>
       {categories.map((item) => (
         <Link
-          to="/category"
-          key={Object.keys(item)}
-          href="#!"
+          to={item.url}
+          key={item.name}
           className="d-flex align-items-center justify-content-start
           pr-3"
         >
-          {item}
+          {item.name}
         </Link>
       ))}
-    </Router>
+    </>
   );
 };
 

@@ -7,6 +7,11 @@
 }
 
 /* Custom Bootstrap */
+
+* {
+  outline: none;
+}
+
 body {
   padding-top: 74px;
   background: #fafafa;
@@ -66,13 +71,6 @@ body {
 
 .header_area a:hover {
   color: #999;
-}
-
-.logo {
-  vertical-align: middle;
-  border-style: none;
-  background: #000;
-  border-radius: 10px;
 }
 
 /* SearchTop */
@@ -226,10 +224,9 @@ h2.section-heading {
 }
 .single-product-wrapper .product-description .hover-content {
   position: absolute;
-  width: calc(100% - 40px);
+  width: 100%;
   top: -70px;
-  left: 20px;
-  right: 20px;
+  margin: 0 auto;
   opacity: 0;
   visibility: hidden;
   -webkit-transition-duration: 500ms;
@@ -483,6 +480,43 @@ h2.section-heading {
   color: #757575;
   text-decoration: line-through;
   line-height: 50px;
+}
+
+/* long description  */
+/* detalles */
+.pp-detalles {
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.pp-detalles .detail-content {
+  padding: 5% 5% 8%;
+}
+
+.pp-detalles h4 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.pp-detalles h5 {
+  text-align: left;
+  font-size: 2em;
+  text-indent: 16px;
+}
+
+.pp-detalles table {
+  margin-bottom: 0;
+}
+
+.pp-detalles td {
+  padding: 8px 0 !important;
+  text-align: left;
+  text-indent: 16px;
+  white-space: unset;
+}
+
+.pp-detalles img {
+  width: 100%;
 }
 
 /* tags */

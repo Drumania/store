@@ -8,8 +8,11 @@ const Header = () => {
   return (
     <header className="header_area">
       <div className="row border-bottom">
-        <Link to="/" className="col-2 border-right">
-          <img src={logo} className="logo img-fluid m-2" alt="StoreNX" />
+        <Link
+          to="/"
+          className="col-2 border-right bg-dark d-flex align-items-center"
+        >
+          <img src={logo} className="img-fluid m-2" alt="StoreNX" />
         </Link>
         <div className="col-4 border-right d-flex">
           <CategoriesTop />

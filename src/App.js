@@ -8,6 +8,7 @@ import Checkout from "./components/Checkout";
 import MyAccount from "./components/MyAccount";
 import Product from "./components/Product";
 import Category from "./components/Category";
+import CuotasSinInteres from "./components/CuotasSinInteres";
 import Favorites from "./components/Favorites";
 import Footer from "./components/Footer";
 
@@ -16,24 +17,14 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/product">
-          <Product />
-        </Route>
-        <Route path="/category">
-          <Category />
-        </Route>
-        <Route path="/favorites">
-          <Favorites />
-        </Route>
-        <Route path="/MyAccount">
-          <MyAccount />
-        </Route>
-        <Route path="/checkout">
-          <Checkout />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        {/* <Route path="/product:id" children={Product} /> */}
+        <Route path="/product" component={Product} />
+        <Route path="/category" component={Category} />
+        <Route path="/cuotas-sin-interes" component={CuotasSinInteres} />
+        <Route path="/favorites" component={Favorites} />
+        <Route path="/MyAccount" component={MyAccount} />
+        <Route path="/Checkout" component={Checkout} />
+        <Route path="/" component={Home} />
       </Switch>
       <Footer />
     </Router>
