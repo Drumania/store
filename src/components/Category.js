@@ -23,13 +23,19 @@ const Category = () => {
               <h4>Tiendas </h4>
             </li>
             <li>
-              <a href="#!">Makkax</a>
+              <a href="#!" className="text-black-50">
+                Makkax
+              </a>
             </li>
             <li>
-              <a href="#!">Harse</a>
+              <a href="#!" className="text-black-50">
+                Harse
+              </a>
             </li>
             <li>
-              <a href="#!">Intex</a>
+              <a href="#!" className="text-black-50">
+                Intex
+              </a>
             </li>
           </ul>
 
@@ -38,13 +44,19 @@ const Category = () => {
               <h4>Marcas</h4>
             </li>
             <li>
-              <a href="#!">Samsung</a>
+              <a href="#!" className="text-black-50">
+                Samsung
+              </a>
             </li>
             <li>
-              <a href="#!">Philips</a>
+              <a href="#!" className="text-black-50">
+                Philips
+              </a>
             </li>
             <li>
-              <a href="#!">Sanyo</a>
+              <a href="#!" className="text-black-50">
+                Sanyo
+              </a>
             </li>
           </ul>
 
@@ -53,13 +65,19 @@ const Category = () => {
               <h4>Descuento</h4>
             </li>
             <li>
-              <a href="#!">40 %</a>
+              <a href="#!" className="text-black-50">
+                40 %
+              </a>
             </li>
             <li>
-              <a href="#!">27 %</a>
+              <a href="#!" className="text-black-50">
+                27 %
+              </a>
             </li>
             <li>
-              <a href="#!">10 %</a>
+              <a href="#!" className="text-black-50">
+                10 %
+              </a>
             </li>
           </ul>
 
@@ -68,13 +86,19 @@ const Category = () => {
               <h4>Precio</h4>
             </li>
             <li>
-              <a href="#!">Hasta $ 20.000</a>
+              <a href="#!" className="text-black-50">
+                Hasta $ 20.000
+              </a>
             </li>
             <li>
-              <a href="#!">$20.000 a $60.000</a>
+              <a href="#!" className="text-black-50">
+                $20.000 a $60.000
+              </a>
             </li>
             <li>
-              <a href="#!">Más de $60.000</a>
+              <a href="#!" className="text-black-50">
+                Más de $60.000
+              </a>
             </li>
           </ul>
 
@@ -83,7 +107,9 @@ const Category = () => {
               <h4>Productos Seleccionados</h4>
             </li>
             <li>
-              <a href="#!">Tele 1</a>
+              <a href="#!" className="text-black-50">
+                Tele 1
+              </a>
             </li>
           </ul>
         </div>
