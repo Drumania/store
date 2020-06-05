@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { masterpage } from "../api/masterpage";
 
 const SearchTop = () => {
   const [searchWord, setSearchWord] = useState("");
@@ -20,8 +21,21 @@ const SearchTop = () => {
           className="form-search"
           id="search-top"
           placeholder="Buscar..."
+          list="autocomplete"
           onChange={handleChange}
         />
+        <datalist id="autocomplete">
+          {masterpage[0].categories.map((item) => (
+            <option key={item.slug} data-value={item.slug}>
+              {item.name}
+            </option>
+          ))}
+          {masterpage[0].products.map((item) => (
+            <option key={item.slug} data-value={item.slug}>
+              {item.name}
+            </option>
+          ))}
+        </datalist>
       </div>
       <div className="col-2">
         <button type="submit" className="btn btn-secondary btn-block">

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Breadcrumbs = ({ categorys, name }) => {
-  console.log(categorys);
+  //console.log(categorys);
   return (
     <ol className="mt-4 breadcrumb">
       {categorys.map((category) => (

@@ -73,6 +73,22 @@ body {
   color: #999;
 }
 
+/* Menu */
+
+.subCateory {
+  display: none;
+}
+
+.hasSubCateory:hover .subCateory {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background: white;
+  line-height: 50px;
+  text-indent: 20px;
+  border: 1px solid #ccc;
+}
+
 /* SearchTop */
 .form-search {
   background: transparent;

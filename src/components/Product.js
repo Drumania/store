@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { postings } from "../api/product_11626.js";
-import { BrowserRouter as Router, useParams } from "react-router-dom";
 
 import Breadcrumb from "./ProductPage/Breadcrumb";
 import Tags from "./ProductPage/Tags";
@@ -13,22 +12,19 @@ import Asks from "./ProductPage/Asks";
 const Product = () => {
   const [product, setproduct] = useState({});
 
-  let { productIdUrl } = useParams();
-  console.log(`El id de la url es: ${productIdUrl}`);
-
   const formatPrecio = (num) => {
     let aux = new Intl.NumberFormat("de-DE").format(num);
     return aux.toLocaleString("de-DE");
   };
 
   useEffect(() => {
-    console.log(postings[0]);
+    //console.log(postings[0]);
 
     setproduct(postings[0]);
   }, []);
 
   return (
-    <Router>
+    <>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
@@ -125,7 +121,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-    </Router>
+    </>
   );
 };
 
