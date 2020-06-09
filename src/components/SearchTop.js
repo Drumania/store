@@ -10,7 +10,7 @@ const SearchTop = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(searchWord);
+    window.location = `/${searchWord}`;
   };
 
   return (

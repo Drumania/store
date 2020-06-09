@@ -65,14 +65,14 @@ export const postings = [
       },
     ],
     category: [
-      { name: "Inicio", url: "http://www.necxus.com.ar/" },
+      { name: "Inicio", url: "/" },
       {
         name: "Consolas y Videojuegos",
-        url: "/categorias/53/Consolas-y-Videojuegos/",
+        url: "Consolas-y-Videojuegos/",
       },
       {
         name: "Juegos Fisicos PS4",
-        url: "/categorias/53/530640/Juegos-Fisicos-PS4/",
+        url: "Juegos-Fisicos-PS4",
       },
     ],
     name: "Juego Last of Us Parte 2 PRE-VENTA",

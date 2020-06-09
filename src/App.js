@@ -14,17 +14,10 @@ import Home from "./components/Home";
 import Checkout from "./components/Checkout";
 import MyAccount from "./components/MyAccount";
 import Product from "./components/Product";
-
 import Category from "./components/Category";
 import CuotasSinInteres from "./components/CuotasSinInteres";
 import Favorites from "./components/Favorites";
 import Footer from "./components/Footer";
-
-// Params are placeholders in the URL that begin
-// with a colon, like the `:id` param defined in
-// the route in this example. A similar convention
-// is used for matching dynamic segments in other
-// popular web frameworks like Rails and Express.
 
 export default function ParamsExample() {
   return (
@@ -46,9 +39,6 @@ export default function ParamsExample() {
 }
 
 function Child() {
-  // We can use the `useParams` hook here to access
-  // the dynamic pieces of the URL.
   let { id } = useParams();
-
   return <CustomRouter slug={id} />;
 }

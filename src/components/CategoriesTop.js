@@ -7,13 +7,13 @@ const CategoriesTop = () => {
       name: "Categorias",
       url: "/category",
       subCateory: [
-        { name: "Televisores", url: "/category" },
-        { name: "Piletas", url: "/category" },
-        { name: "Gaming", url: "/category" },
+        { name: "Televisores", url: "/Televisores" },
+        { name: "Piletas", url: "/Piletas" },
+        { name: "Gaming", url: "/Gaming" },
       ],
     },
     { name: "Cuotas sin interes", url: "/cuotas-sin-interes" },
-    { name: "Ofertas", url: "/category" },
+    { name: "Ofertas", url: "/Ofertas" },
   ];
 
   return (

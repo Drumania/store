@@ -361,6 +361,28 @@ h2.section-heading {
   grid-area: 3 / 3 / 4 / 5;
 }
 
+/* filters */
+
+.filter-boxes a {
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #999;
+  margin: 0 10px 10px 0;
+  float: left;
+  text-decoration: none;
+  background: transparent;
+}
+
+.filter-boxes a:last-child {
+  display: none;
+}
+
+.filter-boxes a:hover {
+  background: #ddd;
+}
+
 /* Brands Area  */
 .brands-area {
   position: relative;
@@ -657,4 +679,10 @@ h2.section-heading {
   display: inline-block;
   padding: 0 10px;
   font-size: 16px;
+}
+
+/* misc */
+
+.clear {
+  clear: both;
 }
