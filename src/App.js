@@ -6,7 +6,6 @@ import {
   Route,
   useParams,
 } from "react-router-dom";
-//import Child from "./components/Child";
 
 import Header from "./components/Header";
 import CustomRouter from "./components/CustomRouter";

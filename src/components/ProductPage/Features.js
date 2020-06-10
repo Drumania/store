@@ -8,7 +8,7 @@ const Features = ({ features }) => {
       <table className="table table-striped">
         <tbody>
           {features.map((item) => (
-            <tr>
+            <tr key={Object.getOwnPropertyNames(item)}>
               <td>{Object.getOwnPropertyNames(item)}</td>
               <td>{Object.values(item)}</td>
             </tr>

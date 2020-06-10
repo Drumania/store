@@ -1,4 +1,4 @@
-export const categoria = [
+export const CategoryBase = [
   {
     id: 1563,
     name: "Televisores",
@@ -12,7 +12,11 @@ export const categoria = [
     ],
     products: [
       {
-        company: { company_id: 1, company_name: "Necxus", slug: "Necxus" },
+        company: {
+          company_id: 1,
+          company_name: "Necxus",
+          slug: "Necxus",
+        },
         id: "16108",
         photo_thumb: "https://www.necxus.com.ar/cache/16108_250x250_1.jpg",
         photo: ["https://www.necxus.com.ar/cache/16108_250x250_2.jpg"],
@@ -58,7 +62,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 1, company_name: "Necxus", slug: "Necxus" },
+        company: {
+          company_id: 1,
+          company_name: "Necxus",
+          slug: "Necxus",
+        },
         id: "19453",
         photo_thumb: "https://www.necxus.com.ar/images/nofound.png",
         photo: ["https://www.necxus.com.ar/images/nofound.png"],
@@ -84,7 +92,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 1, company_name: "Necxus", slug: "Necxus" },
+        company: {
+          company_id: 1,
+          company_name: "Necxus",
+          slug: "Necxus",
+        },
         id: "18721",
         photo_thumb: "https://www.necxus.com.ar/images/nofound.png",
         photo: ["https://www.necxus.com.ar/images/nofound.png"],
@@ -127,7 +139,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 1, company_name: "Necxus", slug: "Necxus" },
+        company: {
+          company_id: 1,
+          company_name: "Necxus",
+          slug: "Necxus",
+        },
         id: "17858",
         photo_thumb: "https://www.necxus.com.ar/cache/17858_250x250_1.jpg",
         photo: ["https://www.necxus.com.ar/cache/17858_250x250_2.jpg"],
@@ -167,7 +183,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 2, company_name: "Makkax", slug: "Makkax" },
+        company: {
+          company_id: 2,
+          company_name: "Makkax",
+          slug: "Makkax",
+        },
         id: "15813",
         photo_thumb: "https://www.necxus.com.ar/cache/15813_250x250_1.jpg",
         photo: ["https://www.necxus.com.ar/cache/15813_250x250_2.jpg"],
@@ -208,7 +228,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 2, company_name: "Makkax", slug: "Makkax" },
+        company: {
+          company_id: 2,
+          company_name: "Makkax",
+          slug: "Makkax",
+        },
         id: "14753",
         photo_thumb: "https://www.necxus.com.ar/cache/14753_250x250_1.jpg",
         photo: ["https://www.necxus.com.ar/cache/14753_250x250_2.jpg"],
@@ -240,7 +264,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 2, company_name: "Makkax", slug: "Makkax" },
+        company: {
+          company_id: 2,
+          company_name: "Makkax",
+          slug: "Makkax",
+        },
         id: "19277",
         photo_thumb: "https://www.necxus.com.ar/images/nofound.png",
         photo: ["https://www.necxus.com.ar/images/nofound.png"],
@@ -279,7 +307,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 2, company_name: "Makkax", slug: "Makkax" },
+        company: {
+          company_id: 2,
+          company_name: "Makkax",
+          slug: "Makkax",
+        },
         id: "12027",
         photo_thumb: "https://www.necxus.com.ar/cache/12027_250x250_1.jpg",
         photo: ["https://www.necxus.com.ar/cache/12027_250x250_2.jpg"],
@@ -310,7 +342,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 2, company_name: "Makkax", slug: "Makkax" },
+        company: {
+          company_id: 2,
+          company_name: "Makkax",
+          slug: "Makkax",
+        },
         id: "18951",
         photo_thumb: "https://www.necxus.com.ar/images/nofound.png",
         photo: ["https://www.necxus.com.ar/images/nofound.png"],
@@ -343,7 +379,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 2, company_name: "Makkax", slug: "Makkax" },
+        company: {
+          company_id: 2,
+          company_name: "Makkax",
+          slug: "Makkax",
+        },
         id: "16543",
         photo_thumb: "https://www.necxus.com.ar/cache/16543_250x250_1.jpg",
         photo: ["https://www.necxus.com.ar/cache/16543_250x250_2.jpg"],
@@ -514,7 +554,11 @@ export const categoria = [
         },
       },
       {
-        company: { company_id: 1, company_name: "Necxus", slug: "Necxus" },
+        company: {
+          company_id: 1,
+          company_name: "Necxus",
+          slug: "Necxus",
+        },
         id: "18795",
         photo_thumb: "https://www.necxus.com.ar/images/nofound.png",
         photo: ["https://www.necxus.com.ar/images/nofound.png"],

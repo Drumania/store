@@ -17,7 +17,7 @@ const CustomRouter = () => {
 
   return (
     <Router>
-      <h3>ID: {id}</h3>
+      {/* <h3>ID: {id}</h3> */}
       {idProduct.length > 0 ? <Product /> : " "}
       {idCategory.length > 0 ? <Category /> : " "}
       {idCategory.length === 0 ? <NofoundPage /> : " "}

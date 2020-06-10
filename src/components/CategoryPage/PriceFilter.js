@@ -9,10 +9,12 @@ const PriceFilter = ({ arrayFilter }) => {
     pricesLowToHighAux = [...pricesLowToHigh],
     pricesHighToLow = pricesLowToHighAux.reverse();
 
+  /*
   console.log("pricesLowToHigh: ");
   console.log(pricesLowToHigh);
   console.log("pricesHighToLow: ");
   console.log(pricesHighToLow);
+  */
 
   const totalPrice = pricesHighToLow.reduce(function (a, b) {
     return parseInt(a) + parseInt(b);

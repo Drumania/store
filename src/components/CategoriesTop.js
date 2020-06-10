@@ -1,21 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { categories } from "../api/CategoriasTopApi";
 
 const CategoriesTop = () => {
-  const categories = [
-    {
-      name: "Categorias",
-      url: "/category",
-      subCateory: [
-        { name: "Televisores", url: "/Televisores" },
-        { name: "Piletas", url: "/Piletas" },
-        { name: "Gaming", url: "/Gaming" },
-      ],
-    },
-    { name: "Cuotas sin interes", url: "/cuotas-sin-interes" },
-    { name: "Ofertas", url: "/Ofertas" },
-  ];
-
   return (
     <ul className="d-flex flex-row align-items-center">
       {categories.map((item) => (
