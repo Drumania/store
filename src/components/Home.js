@@ -26,7 +26,7 @@ const GridProduct = () => {
   }, []);
 
   return (
-    <div className="container-fluid">
+    <div className="container">
       <Hero />
       <Brands />
       <h2 className="my-3 section-heading">Ofertas!</h2>

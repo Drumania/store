@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header_area">
-      <div className="row border-bottom">
+      <div className="container">
+      <div className="row">
         <Link
           to="/"
           className="col-2 border-right bg-dark d-flex align-items-center"
@@ -45,6 +46,7 @@ const Header = () => {
         >
           <i className="fas fa-cart-plus"></i>
         </Link>
+      </div>
       </div>
     </header>
   );

@@ -25,7 +25,7 @@ const Product = () => {
 
   return (
     <>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col-12">
             <Breadcrumb categorys={postings[0].category} name={product.name} />
